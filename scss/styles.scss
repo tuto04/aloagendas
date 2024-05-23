@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*reset{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+@import 'colores';
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    header{
+        background-color: $violetaClarito;
+        nav a img {
+            width: 15rem;
+            margin-left: 0.5rem;
+            padding-top: 0rem;  
+            position:absolute;
+                top: 2rem;
+                left: 1.5rem;
+        }
+        h1 {
+            color: $negro;
+            font-size:10rem;
+            text-align: center;
+            justify-content: center;
+            background-color: $violetaClarito;
+            width: 100%;
+            height: 17rem;
+            margin: 0%;
+            padding: 0%;
+        }
+        .nav-link{
+            color: $blanco;
+            background-color: $violetaOscuro;
+            list-style-type: none;
+            font-size: 2rem;
+            margin-left: 0.2rem;
+            margin-right:0.2rem ;
+            border-style: solid;
+        }
+    }
+    main{
+        h2{
+            color: $negro;
+            font-size:4.6rem;
+            text-align: center;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+        p{
+            font-size: 2.2rem;
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+        .imagenes-agenda{
+            display: flex;
+            flex-direction: row;
+            gap: 0rem;
+            .imagenes-index{
+                width: 40rem;
+                height: 40rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+        div{
+            ul li{
+                list-style-type: none;
+                font-size: 2.2rem;
+                text-align: justify;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                background-color: $blanco;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+            }
+            ol{
+                font-size: 2.2rem;
+                text-align: justify;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+            }
+            form{
+                label{
+                    font-size: 2.2rem;
+                    display: block;
+                    padding-bottom: 0.5rem;
+                    padding-top: 0.5rem;
+                }
+                input{
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            #contactoform{
+                font-size: 2.2rem;
+                text-align: center;
+                display: block;
+                border-style: outset;
+                margin-left: 41%;
+                margin-right: 33%;
+                height:30rem;
+                width: 23rem;
+                padding-top: 2rem;
+                padding-bottom: 0.5rem;
+                .submitbutton{
+                    color: #F0F0F2;
+                    background-color: $violetaOscuro;
+                    list-style-type: none;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    text-align:center;
+                    display: inline;
+                    width: 10rem;
+                    height: 3.5rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.9rem;
+                }                
+            }
+        }
+        .flexcta{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .ctaform{
+                font-size: 2.2rem;
+                text-align: left;
+            }
+        }
+        .carruselgrid{
+            display: grid;
+            grid-template-columns: 3fr;
+            grid-template-rows: 3fr;
+            column-gap: 5rem;
+            row-gap: 5rem;
+            .img-carrusel{
+                width: 40rem;
+                height: 40rem;
+            }
+        }
+    }
+    footer{
+        font-size: 1.2rem;
+        color: $negro;
+        background-color: none;
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        .texto-copyright{
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+/* mobile */
+@media screen and (min-width:320px) and (max-width:767px) {
+    body{
+        header{
+            nav a img{
+                width: 5rem;
+            }
+            h1{
+                font-size: 5rem;
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+            }
+            .botonvioleta{
+                font-size: 2rem;
+            }
+        }
+        main{
+            h2{
+                font-size: 2rem;
+            }
+            article p{
+                font-size: 1.9rem;
+                display: flex;
+                flex-wrap: wrap;
+                width: 75%
+            }
+            .imagenes-agenda{
+                display: block;
+                .imagenes-index{
+                    width: 30rem;
+                    height: 30rem;
+                }
+            }
+            div{
+                ul li{
+                    font-size: 1.8rem;
+                }
+                form{
+                    label{
+                        font-size: 1.6rem;
+                    }
+                    input{
+                        font-size: 1rem;
+                    }
+                }
+                #contactoform{
+                    font-size: 2.2rem;
+                    justify-content: center;
+                    justify-self: center;
+                    justify-items: center;
+                    height:35.6rem;
+                    width: 18rem;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    margin-top: 8rem;
+                    .submitbutton{
+                        font-size: 1.6rem;
+                        width: 7.5rem;
+                        height: 3.5rem;
+                        margin-top: 0.8rem;
+                    }
+                }
+            }
+            .flexcta{
+                display: block;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+            }
+            .carruselgrid{
+                display: grid;
+                grid-template-columns: 1fr;
+                .img-carrusel{
+                    width: 25rem;
+                    height: 25rem;
+                }
+            }
+        }
+        footer{
+            font-size: 0.8rem;
+            padding-top: 5rem;
+            padding-bottom: 0.5rem;
+            .texto-copyright{
+                font-size: 1.2rem;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body{
+        header{
+            nav a img{
+                width: 12rem;
+                margin-top: 2rem;
+            }
+            h1{
+                font-size: 7.5rem;
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+            }
+            .botonvioleta{
+                font-size: 2.6rem;
+            }
+        }
+        main{
+            h2{
+                font-size: 3.6rem;
+            }
+            article p{
+                font-size: 2.6rem;
+                display: flex;
+                flex-wrap: wrap;
+                width: 75%;
+            }
+            .imagenes-index{
+                width: 25rem;
+                height: 25rem;
+                gap: 1.5rem;
+                margin-left: 0.75rem;
+                margin-right: 0.75rem;
+            }
+            div{
+                ul li{
+                    font-size: 3.2rem;
+                    text-align: justify;
+                    justify-content: center;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+                form{
+                    label{
+                        font-size: 2rem;
+                    }
+                    input{
+                        font-size: 1.2rem;
+                    }
+                }
+                #contactoform{
+                    font-size: 2.2rem;
+                    justify-content: center;
+                    justify-self: center;
+                    justify-items: center;
+                    height:38rem;
+                    width: 22rem;
+                    margin-left: 40%;
+                    margin-right: 60%;
+                    margin-top: 4rem;
+                    margin-bottom: 2rem;
+                    .submitbutton{
+                        font-size: 1.6rem;
+                        width: 7.5rem;
+                        height: 3.5rem;
+                        margin-top: 0.8rem;
+                    }
+                }
+            }
+            .flexcta{
+                display: block;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                margin-bottom: 2rem;
+            }
+            .carrusel-grid{
+                .img-carrusel{
+                    width: 32rem;
+                    height: 32rem;
+                }
+            }
+        }
+        footer{
+            .texto-copyright{
+                    font-size: 2.2rem;
+                    margin-left: 15%;
+                    margin-right: 15%;
+            }
+        }
+    }
+}
+
+/* desktop */
+@media screen and (min-width:1024px){
+    body{
+        header{
+            .botonvioleta{
+                font-size: 2.5rem;
+                margin-left: 0.2rem;
+                margin-right:0.2rem ;
+            }
+        }
+        main{
+            div{
+                form{
+                    input{
+                        font-size: 1.8rem;
+                    }
+                }
+                #contactoform{
+                    font-size: 2.2rem;
+                    text-align: center;
+                    display: block;
+                    border-style: outset;
+                    margin-left: 41%;
+                    margin-right: 33%;
+                    height:44rem;
+                    width: 24rem;
+                    padding-top: 2rem;
+                    padding-bottom: 0.5rem;
+                    .submitbutton{
+                        list-style-type: none;
+                        font-size: 1.4rem;
+                        display: inline;
+                        width: 10rem;
+                        height: 3.5rem;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

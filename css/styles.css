@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html header {
+  background-color: #D08FD9;
+}
+html header nav a img {
+  width: 15rem;
+  margin-left: 0.5rem;
+  padding-top: 0rem;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+}
+html header h1 {
+  color: #384026;
+  font-size: 10rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #D08FD9;
+  width: 100%;
+  height: 17rem;
+  margin: 0%;
+  padding: 0%;
+}
+html header .nav-link {
+  color: #FAEEFF;
+  background-color: #812B8C;
+  list-style-type: none;
+  font-size: 2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  border-style: solid;
+}
+html main h2 {
+  color: #384026;
+  font-size: 4.6rem;
+  text-align: center;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+html main p {
+  font-size: 2.2rem;
+  text-align: justify;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+html main .imagenes-agenda {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+}
+html main .imagenes-agenda .imagenes-index {
+  width: 40rem;
+  height: 40rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+html main div ul li {
+  list-style-type: none;
+  font-size: 2.2rem;
+  text-align: justify;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #FAEEFF;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+html main div ol {
+  font-size: 2.2rem;
+  text-align: justify;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+html main div form label {
+  font-size: 2.2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+html main div form input {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+html main div #contactoform {
+  font-size: 2.2rem;
+  text-align: center;
+  display: block;
+  border-style: outset;
+  margin-left: 41%;
+  margin-right: 33%;
+  height: 30rem;
+  width: 23rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+html main div #contactoform .submitbutton {
+  color: #F0F0F2;
+  background-color: #812B8C;
+  list-style-type: none;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  width: 10rem;
+  height: 3.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+html main .flexcta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+html main .flexcta .ctaform {
+  font-size: 2.2rem;
+  text-align: left;
+}
+html main .carruselgrid {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  row-gap: 5rem;
+}
+html main .carruselgrid .img-carrusel {
+  width: 40rem;
+  height: 40rem;
+}
+html footer {
+  font-size: 1.2rem;
+  color: #384026;
+  background-color: none;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+html footer .texto-copyright {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body header nav a img {
+    width: 5rem;
+  }
+  body header h1 {
+    font-size: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  body header .botonvioleta {
+    font-size: 2rem;
+  }
+  body main h2 {
+    font-size: 2rem;
+  }
+  body main article p {
+    font-size: 1.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  body main .imagenes-agenda {
+    display: block;
+  }
+  body main .imagenes-agenda .imagenes-index {
+    width: 30rem;
+    height: 30rem;
+  }
+  body main div ul li {
+    font-size: 1.8rem;
+  }
+  body main div form label {
+    font-size: 1.6rem;
+  }
+  body main div form input {
+    font-size: 1rem;
+  }
+  body main div #contactoform {
+    font-size: 2.2rem;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    height: 35.6rem;
+    width: 18rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 8rem;
+  }
+  body main div #contactoform .submitbutton {
+    font-size: 1.6rem;
+    width: 7.5rem;
+    height: 3.5rem;
+    margin-top: 0.8rem;
+  }
+  body main .flexcta {
+    display: block;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  body main .carruselgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  body main .carruselgrid .img-carrusel {
+    width: 25rem;
+    height: 25rem;
+  }
+  body footer {
+    font-size: 0.8rem;
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+  }
+  body footer .texto-copyright {
+    font-size: 1.2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body header nav a img {
+    width: 12rem;
+    margin-top: 2rem;
+  }
+  body header h1 {
+    font-size: 7.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  body header .botonvioleta {
+    font-size: 2.6rem;
+  }
+  body main h2 {
+    font-size: 3.6rem;
+  }
+  body main article p {
+    font-size: 2.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  body main .imagenes-index {
+    width: 25rem;
+    height: 25rem;
+    gap: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  body main div ul li {
+    font-size: 3.2rem;
+    text-align: justify;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  body main div form label {
+    font-size: 2rem;
+  }
+  body main div form input {
+    font-size: 1.2rem;
+  }
+  body main div #contactoform {
+    font-size: 2.2rem;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    height: 38rem;
+    width: 22rem;
+    margin-left: 40%;
+    margin-right: 60%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  body main div #contactoform .submitbutton {
+    font-size: 1.6rem;
+    width: 7.5rem;
+    height: 3.5rem;
+    margin-top: 0.8rem;
+  }
+  body main .flexcta {
+    display: block;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  body main .carrusel-grid .img-carrusel {
+    width: 32rem;
+    height: 32rem;
+  }
+  body footer .texto-copyright {
+    font-size: 2.2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+  body header .botonvioleta {
+    font-size: 2.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  body main div form input {
+    font-size: 1.8rem;
+  }
+  body main div #contactoform {
+    font-size: 2.2rem;
+    text-align: center;
+    display: block;
+    border-style: outset;
+    margin-left: 41%;
+    margin-right: 33%;
+    height: 44rem;
+    width: 24rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  body main div #contactoform .submitbutton {
+    list-style-type: none;
+    font-size: 1.4rem;
+    display: inline;
+    width: 10rem;
+    height: 3.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

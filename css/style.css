@@ -51,29 +51,34 @@ header nav a img {
 }
 
 /* botones de redireccion por debajo del titulo*/
-.botonvioleta{
+.nav-link{
     color: #F0F0F2;
     background-color: #812B8C;
     list-style-type: none;
-    font-size: 2.5rem;
-    text-decoration: none;
-    display: inline;
-    border-style: solid;
+    font-size: 2rem;
     margin-left: 0.2rem;
     margin-right:0.2rem ;
-    justify-content: start;
+    border-style: solid;
 }
 
 /* imagenes del index */
 .imagenes-agenda{
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 0rem;
 }
 
-main div img{
-    width: 43rem;
-    height: 43rem;
+.imagenes-index{
+    width: 40rem;
+    height: 40rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* imagenes carrusel */
+.img-carrusel{
+    width: 40rem;
+    height: 40rem;
 }
 
 /* textos de la pagina gral.*/
@@ -82,6 +87,8 @@ p{
     text-align: justify;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 /* tamaño copyright */
@@ -127,6 +134,8 @@ main div ol{
     text-align: justify;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 /* crea tu agenda formulario */
@@ -152,8 +161,8 @@ main div form label{
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: 3fr;
-    column-gap: 10rem;
-    row-gap: 10rem;
+    column-gap: 5rem;
+    row-gap: 5rem;
 }
 
 /* contacto formulario */
@@ -245,6 +254,7 @@ main div form input{
     }
 }
 
+/* tablet */
 @media screen and (min-width:768px) and (max-width:1023px) {
     h1{
         font-size: 7.5rem;
@@ -302,6 +312,7 @@ main div form input{
     }
 }
 
+/* desktop */
 @media screen and (min-width:1024px){
     .botonvioleta{
         font-size: 2.5rem;

@@ -132,6 +132,12 @@ html main .flexcta .ctaform {
   font-size: 2.2rem;
   text-align: left;
 }
+html main .flexcta .ctaform label {
+  background-color: #D08FD9;
+}
+html main .flexcta .ctaform select {
+  background-color: #812B8C;
+}
 html main .carruselgrid {
   display: grid;
   grid-template-columns: 3fr;

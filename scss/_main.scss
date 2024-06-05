@@ -1,0 +1,111 @@
+main{
+    h2{
+        color: $negro;
+        font-size:4.6rem;
+        text-align: center;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    p{
+        font-size: 2.2rem;
+        text-align: justify;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    .imagenes-agenda{
+        display: flex;
+        flex-direction: row;
+        gap: 0rem;
+        .imagenes-index{
+            width: 40rem;
+            height: 40rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+    div{
+        ul li{
+            list-style-type: none;
+            font-size: 2.2rem;
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: $blanco;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+        ol{
+            font-size: 2.2rem;
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+        form{
+            label{
+                font-size: 2.2rem;
+                display: block;
+                padding-bottom: 0.5rem;
+                padding-top: 0.5rem;
+            }
+            input{
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+        #contactoform{
+            font-size: 2.2rem;
+            text-align: center;
+            display: block;
+            border-style: outset;
+            margin-left: 41%;
+            margin-right: 33%;
+            height:30rem;
+            width: 23rem;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem;
+            .submitbutton{
+                color: #F0F0F2;
+                background-color: $violetaOscuro;
+                list-style-type: none;
+                font-size: 1.4rem;
+                text-decoration: none;
+                text-align:center;
+                display: inline;
+                width: 10rem;
+                height: 3.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.9rem;
+            }                
+        }
+    }
+    .flexcta{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .ctaform{
+            font-size: 2.2rem;
+            text-align: left;
+            label{
+                background-color: $violetaClarito;
+            }
+            select{
+                background-color: $violetaOscuro;
+            }
+        }
+    }
+    .carruselgrid{
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 3fr;
+        column-gap: 5rem;
+        row-gap: 5rem;
+        .img-carrusel{
+            width: 40rem;
+            height: 40rem;
+        }
+    }
+}

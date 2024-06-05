@@ -23,7 +23,7 @@ header{
 /* titulos para todas las pags*/
 h1 {
     color: #384026;
-    font-size:10rem;
+    font-size:7.5rem;
     text-align: center;
     justify-content: center;
     background-color: #D08FD9;
@@ -35,7 +35,7 @@ h1 {
 
 /* imagen logo para todas las pags*/
 header nav a img {
-    width: 15rem;
+    width: 11.5rem;
     margin-left: 0.5rem;
     padding-top: 0rem;  
     position:absolute;
@@ -196,12 +196,12 @@ main div form input{
 /* mobile */
 @media screen and (min-width:320px) and (max-width:767px) {
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
         padding-top: 5rem;
         padding-bottom: 2rem;
     }
     header nav a img{
-        width: 5rem;
+        width: 4rem;
     }
     .botonvioleta{
         font-size: 2rem;
@@ -277,7 +277,7 @@ main div form input{
 /* tablet */
 @media screen and (min-width:768px) and (max-width:1023px) {
     h1{
-        font-size: 7.5rem;
+        font-size: 5rem;
         padding-top: 5rem;
         padding-bottom: 2rem;
     }

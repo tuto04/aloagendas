@@ -89,10 +89,11 @@ main{
         .ctaform{
             font-size: 2.2rem;
             text-align: left;
-            label{
+            .label{
+                color: $blanco;
                 background-color: $violetaClarito;
             }
-            select{
+            .abajolabel{
                 background-color: $violetaOscuro;
             }
         }

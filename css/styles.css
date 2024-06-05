@@ -135,9 +135,16 @@ html main .flexcta .ctaform {
 html main .flexcta .ctaform .label {
   color: #FAEEFF;
   background-color: #D08FD9;
+  border-radius: 20%;
+  border-color: #812B8C;
+  border-style: double;
+  border-width: 1rem;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
 }
 html main .flexcta .ctaform .abajolabel {
-  background-color: #812B8C;
+  border-width: 0.2rem;
+  border-color: #384026;
 }
 html main .carruselgrid {
   display: grid;

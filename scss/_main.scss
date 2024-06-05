@@ -92,10 +92,17 @@ main{
             .label{
                 color: $blanco;
                 background-color: $violetaClarito;
+                border-radius: 20%;
+                border-color: $violetaOscuro;
+                border-style: double;
+                border-width: 1rem;
+                padding: 0.8rem;
+                margin-bottom: 2rem;
             }
             .abajolabel{
-                background-color: $violetaOscuro;
-            }
+                border-width: 0.2rem;
+                border-color: $negro;
+                }
         }
     }
     .carruselgrid{

@@ -148,6 +148,21 @@ main div form label{
     text-align: left;
 }
 
+.label{
+    color: #FAEEFF;
+    background-color: #D08FD9;
+    border-radius: 20%;
+    border-color: #812B8C;
+    border-style: double;
+    border-width: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+}
+.abajolabel{
+    border-width: 0.2rem;
+    border-color: #384026;
+}
+
 .flexcta{
     display: flex;
     flex-direction: row;

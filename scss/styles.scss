@@ -18,7 +18,27 @@ html {
     @import 'main';
     @import 'footer';
 }
-/* mobile */
+
+@mixin media($device) {
+    @if $device == mobile{
+        @media screen and (max-width: 767px){
+            @content;
+        }
+    }
+
+    @else if $device == tablet {
+        @media screen and (max-width: 1023px){
+            @content;
+        }
+    }
+
+    @else if $device == desktop{
+        @media screen and (min-width: 1024px) {
+            @content
+        }
+    }
+}
+
 @media screen and (min-width:320px) and (max-width:767px) {
     body{
         header{
@@ -74,6 +94,9 @@ html {
                     margin-right: 15%;
                     margin-top: 8rem;
                     .submitbutton{
+                        @include media(mobile) {
+                            background-color:darkmagenta;
+                        }
                         font-size: 1.6rem;
                         width: 7.5rem;
                         height: 3.5rem;
@@ -108,7 +131,6 @@ html {
     }
 }
 
-/* tablet */
 @media screen and (min-width:768px) and (max-width:1023px) {
     body{
         header{
@@ -170,6 +192,9 @@ html {
                     margin-top: 4rem;
                     margin-bottom: 2rem;
                     .submitbutton{
+                        @include media (tablet) {
+                            background-color:deeppink ;
+                        }
                         font-size: 1.6rem;
                         width: 7.5rem;
                         height: 3.5rem;
@@ -200,7 +225,6 @@ html {
     }
 }
 
-/* desktop */
 @media screen and (min-width:1024px){
     body{
         header{
@@ -229,6 +253,9 @@ html {
                     padding-top: 2rem;
                     padding-bottom: 0.5rem;
                     .submitbutton{
+                        @include media(desktop) {
+                            background-color:fuchsia ;
+                        }
                         list-style-type: none;
                         font-size: 1.4rem;
                         display: inline;
@@ -242,3 +269,4 @@ html {
         }
     }
 }
+
